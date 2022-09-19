@@ -1,0 +1,229 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	scroll-behavior: smooth;
+
+}
+.box {
+    width: 0%;
+    outline: none;
+    opacity: .5;
+    color: #000000;
+
+}
+header {
+	background: #020202;
+	color: #f80101ed;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.logo {
+	margin-right: auto;
+	display: flex;
+	gap: 6px;
+}
+
+.logo-img {
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+}
+
+.logo-title {
+	cursor: pointer;
+	transition: all .5s ease 0s;
+}
+
+.logo:hover {
+	color: #e60606;
+	transform: rotate(3deg);
+	background-image: url(./anjas.gif);
+}
+
+.btn-cta {
+	margin-right: 10px;
+	border: none;
+	font-size: 24px;
+	padding: 15px 15px;
+	background: #a83106;
+	color: #f2eeea;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight:bold
+	
+}
+
+nav ul{
+	display: flex;
+	padding: 20px;
+}
+
+li {
+	list-style-type: none;
+	padding: 10px;
+}
+
+li a {
+	transition: all .5s ease 0s;
+	display: inline-block;
+}
+
+li a:hover {
+	color: #09ed42;
+	transform: rotate(2deg);
+}
+
+a {
+	color: #eaeaea;
+	text-decoration: none;
+}
+
+.container {
+	background-image: url(./anjas.gif);
+	background-size: 100rem;
+	max-width: 1980px;
+	margin: center;
+	padding: 270px 0;
+
+}
+	
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	
+}
+
+.title {
+	background-image: url(./giphya\ \(1\).gif);
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+
+}
+
+.description {
+	background-image: url(./giphya\ \(1\).gif);
+	font-size: 40px;
+	font-weight: bolder;
+	color: white;
+}
+
+.img-foto {
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	max-width: 1000px;
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+	
+}
+
+.tentang {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background:#000101;
+	color: #dd0303;
+	padding: 45px;
+}
+
+.mt-10 {
+	margin-top: 85px;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.card-item {
+	text-align: center;
+	width: 30%;
+	min-height: 200px;
+	max-height: 250px;
+	color: #eea404;
+	box-shadow: 10px 10px 10px 10px rgba(130, 148, 9, 0.5);
+	background-image: url(./Vanilla-1s-281px.gif);
+	background-size: 35em;
+	
+}
+
+.card-title {
+	font-size: 20px;
+	font-weight: bolder;
+	height: 200;
+}
+
+.card-description {
+	font-size: 20px;
+	margin-top: 10px;
+    font-weight: bold;
+	color: rgb(14, 197, 14);
+}
+
+.icon {
+	width: 100px;
+	height: 90px;
+	margin: 10px;
+	padding: 1px;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	background: #1A2238;
+	color: #eaeaea;
+}
+
+@media screen and (max-width: 500px) {
+	.card {
+		flex-direction: column;
+		gap: 0;
+	}
+	.card-item {
+		width: 100%;
+		opacity: 0.9;
+	}
+	
+	.container {
+		width: 100%;
+		padding: 10;
+	}
+	
+	.intro {
+		margin-top: 20px;
+	}
+	
+	.img-foto {
+		padding: 0;
+	}
+	
+	nav {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: #1A2238;
+		z-index: 9;
+	}
+	
+
+}
